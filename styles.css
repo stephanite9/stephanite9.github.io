@@ -1,24 +1,40 @@
-/* CSS Reset */
+/* Base HTML Styles */
+
+:root {
+  --brand:  #38A3A5;
+  --action: #A9D8FF;
+  --highlight: #D1BF6F;
+  --white: #ffffff;
+  --base-light: #C2D1D6;
+  --base-dark: #212D31;
+  --black: #111111;
+}
+
+/* CSS RESET */
+
 html {
-   box-sizing: border-box;
-   font-size: 16px;
-   font-family: "Inter", sans-serif;
-   color: var(--black);
-   scroll-behavior: smooth;
+     box-sizing: border-box;
+     font-family: 'Montserrat Alternates';
+     font-size: 16px;
+     color: var(--black);
+     scroll-behavior: smooth;
  }
+
  *,
  *:before,
  *:after {
-   box-sizing: inherit;
+     box-sizing: inherit;
  }
+
  h1,
  h2,
  h3,
  h4,
  h5,
  h6 {
-   font-family: "Rubik", sans-serif;
+    
  }
+
  body,
  h1,
  h2,
@@ -29,20 +45,134 @@ html {
  p,
  ol,
  ul {
-   margin: 0;
-   padding: 0;
+     margin: 0;
+     padding: 0;
  }
+
  ol,
  ul {
-   list-style: none;
+     list-style: none;
  }
+
  img {
-   max-width: 100%;
-   height: auto;
+     max-width: 100%;
+     height: auto;
  }
+
  input,
  button,
  textarea,
  select {
-   font: inherit;
+     font: inherit;
  }
+
+
+
+
+.main-name{
+    font-size: 50px;
+    font-family: "Sacramento", cursive;
+    color: var(--base-dark);
+}
+
+.specialg{
+    color: var(--highlight);
+}
+
+.flex{
+    display:flex;
+    border-color: 1px solid red;
+}
+
+.space-between{
+        justify-content:space-between;
+        align-items: center;
+}
+
+.column{
+    flex-direction:column;
+}
+
+.row{
+    flex-direction:row;
+}
+
+header nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    background-color: var(--base-light);
+ }
+
+section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section3{
+
+}
+
+.profilepic{
+    max-height: 400px;
+    width: auto;
+}
+
+.hero{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+    font-style: normal;
+    background-color: var(--brand);
+    color: white;
+    padding: 2%;
+}
+
+.contact-form{
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.padding-small{
+    padding: 8px;
+}
+
+.padding-medium{
+    padding: 16px;
+}
+
+.padding-large{
+    padding: 32px;
+}
+
+.padding-xl{
+    padding: 64px;
+}
+
+.icon{
+    max-width: 32px;
+}
+
+article .icon{
+    width: 24px;
+}
+
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.articles-container{
+    background-color: #cdb5df;
+}
+
+.btn-primary{
+    background-color: #D1BF6F;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-sizing: content-box;
+
+}
