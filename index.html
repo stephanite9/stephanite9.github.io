@@ -9,33 +9,36 @@
    <link rel="stylesheet" href="styles.css">
    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
    <link href=" https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pending" />
    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gaegu&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mansalva&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sacramento&family=Savate:ital,wght@0,200..900;1,200..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="flex column">
+    <header>
     <div class="main-name"><h1>Stephanie Chan</h1></div>
         <nav>
-            <ul>
+            <ul class="row space-evenly">
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Stuff I Like</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
  
 <main>
 
-    <section1 class="hero flex space-between">
+    <section class="section1 hero flex space-between">
         <h1><span class="specialg">G</span>reyhounds. <br><span class="specialg">G</span>roundwater. <br><span class="specialg">G</span>ood food. <br><span class="specialg">G</span>eology.</h1>
         <img src="./img/profilepic.jpeg" alt="Picture of woman picking up rocks from river" class="profilepic">
-    </section1>
+        
+    </section>
 
-    <section2>
+    <section class="section2 padding-large articles-container flex-flow">
+             
         <div>
-            <ul>
+            <ul class="padding-medium">
                 <h2><li>Things I'm good at</li></h2>
                 <h3>
                     <li><a><i>Finding cool rocks</i></a></li>
@@ -57,34 +60,40 @@
                     <li><a><i>Tanking, keeping the party alive</i></a></li>
                 </h3>
             </ul>
-            </div>
-    </section2>
+        </div>
+    </section>
 
-    <h1>My work</h1>
-    <section3>
+    <h2 class="center padding-medium">My work</h2>
+    <section class="section3 flex-flow padding-medium">
         <article>
             <img class="" src="" alt="">
-            <h2>Project 1</h2>
+            <h3>Project 1</h3>
                 <p>details details details</p>
-        </article>
-        <article>
-            <img class="" src="" alt="">
-            <h2>Project 2</h2>
-                <p>details details details</p>
-        </article>
-        <article>
-            <img class="" src="" alt="">
-            <h2>Project 3</h2>
-                <p>details details details</p>
+                <p><span class="material-symbols-outlined">pending</span></p>
+
         </article>
         
-    </section3>
+        <article>
+            <img class="" src="" alt="">
+            <h3>Project 2</h3>
+                <p>details details details</p>
+                <p><span class="material-symbols-outlined">pending</span></p>
+        </article>
+        
+        <article>
+            <img class="" src="" alt="">
+            <h3>Project 3</h3>
+                <p>details details details</p>
+                <p><span class="material-symbols-outlined">pending</span></p>
+        </article>
+        
+    </section>
 
 </main>
 
 <footer>
-    <nav>
-           <ul>
+    <nav class="center">
+            <ul class="icon row">
                <li><a href="#"><img src="img/instagram.svg" alt="Instagram logo" class="icon"></a></li>
                <li><a href="https://shecodesaus.slack.com/team/U08UPGN8YHY"><img src="img/slack.svg" alt="Slack logo" class="icon"></a></li>
                <li><a href="https://github.com/stephanite9"><img src="img/github.svg" alt="GitHub logo" class="icon"></a></li>
