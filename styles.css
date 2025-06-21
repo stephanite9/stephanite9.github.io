@@ -71,12 +71,15 @@ html {
  }
 
 
-
+header{
+    padding: var(--padding-base);
+}
 
 .main-name{
     font-size: 50px;
     font-family: "Sacramento", cursive;
     color: var(--base-dark);
+    padding: var(--padding-medium);
 }
 
 .specialg{
@@ -207,7 +210,9 @@ article .icon{
 }
 
 .articles-container{
-    background-color: var(--base-light);
+    background-color: var(--action);
+    padding: var(--padding-base);
+    margin: 2%;
 }
 
 .btn-primary{
@@ -230,7 +235,6 @@ article .icon{
 @media only screen and (min-width: 700px) {
   .section3 {
     display: flex;
-    background-color: blue;
     justify-content:center;
     flex-flow: wrap row;
     }
@@ -239,6 +243,9 @@ article .icon{
 
 /* The following styles will override the default styles and media queries on wider screen sizes (if they exist) on screens wider than 1024px. */
 @media only screen and (min-width: 1024px) {
+    header {
+        padding: var(--padding-medium) calc((100vw / 2) - (1000px / 2));
+    }
     section {
         padding: var(--padding-large) calc((100vw / 2) - (1000px / 2));
     }
