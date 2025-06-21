@@ -142,18 +142,22 @@ section{
 }
 
 .section2{
+    padding: var(--padding-large);
     display: flex;
+    flex-flow: wrap row;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .section3{
+    padding: var(--padding-large);
     display: flex;
+    flex-flow:wrap row;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-}
+    }
 
 
 .contact-form{
@@ -238,4 +242,10 @@ article .icon{
     section {
         padding: var(--padding-large) calc((100vw / 2) - (1000px / 2));
     }
+}
+
+nav a:hover {
+  background-color: #D1BF6F;
+  font-size: 16px;
+  font-weight: bold;
 }
