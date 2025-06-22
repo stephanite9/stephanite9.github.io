@@ -12,6 +12,7 @@
   --padding-base:8px;
   --padding-medium: calc(var(--padding-base)*2);
   --padding-large: calc(var(--padding-base)*4);
+  --padding-xl: calc(var(--padding-base)*6);
 }
 
 /* CSS RESET */
@@ -231,24 +232,23 @@ article .icon{
   'opsz' 24
 }
 
-/* The following styles will override the default styles (if they exist) on screens wider than 400px. */
-@media only screen and (min-width: 700px) {
-  .section3 {
-    display: flex;
-    justify-content:center;
-    flex-flow: wrap row;
-    }
- 
+.min-width{
+    min-width: 768px;
 }
+
 
 /* The following styles will override the default styles and media queries on wider screen sizes (if they exist) on screens wider than 1024px. */
 @media only screen and (min-width: 1024px) {
     header {
-        padding: var(--padding-medium) calc((100vw / 2) - (1000px / 2));
+        padding: var(--padding-large) calc((100vw / 2) - (1000px / 2));
     }
     section {
         padding: var(--padding-large) calc((100vw / 2) - (1000px / 2));
     }
+    .contact-form {
+        padding: var(--padding-medium) calc((100vw / 2) - (1400px / 2));
+    }
+    
 }
 
 nav a:hover {
