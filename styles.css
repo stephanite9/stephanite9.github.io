@@ -71,27 +71,11 @@ html {
      font: inherit;
  }
 
+/* UTILITY */
 
 header{
     padding: var(--padding-base);
 }
-
-.main-name{
-    font-size: 50px;
-    font-family: "Sacramento", cursive;
-    color: var(--base-dark);
-    padding: var(--padding-medium);
-}
-
-.specialg{
-    color: var(--highlight);
-}
-
-.profilepic{
-    max-height: 400px;
-    width: auto;
-}
-
 
 .flex{
     display:flex;
@@ -123,57 +107,6 @@ header{
     display:flex;
     flex-direction:row;
 }
-
-header nav ul{
-    display:flex;
-    flex-direction:column;
-    align-items: flex-end;
-    background-color: var(--base-light);
-}
-
-.hero{
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 300;
-    font-size: xx-large;
-    font-style: normal;
-    background-color: var(--brand);
-    color: white;
-    align-items: center;
-}
-
-section{
-    padding: var(--padding-medium) var(--padding-large)
-}
-
-.section2{
-    padding: var(--padding-large);
-    display: flex;
-    flex-flow: wrap row;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.section3{
-    padding: var(--padding-large);
-    display: flex;
-    flex-flow:wrap row;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-
-
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 48px 16px;
-    border-radius: 10px;
-    margin: 5px 10px;
-    background-color: var(--brand);
-}
-
 
 .padding-small{
     padding: 8px;
@@ -209,6 +142,76 @@ article .icon{
 .flex-flow{
     flex-flow: wrap row;
 }
+
+
+.main-name{
+    font-size: 50px;
+    font-family: "Sacramento", cursive;
+    color: var(--base-dark);
+    padding: var(--padding-medium);
+}
+
+.specialg{
+    color: var(--highlight);
+}
+
+.profilepic{
+    max-height: 400px;
+    width: auto;
+}
+
+.hero{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+    font-style: normal;
+    background-color: var(--brand);
+    color: white;
+    align-items: center;
+}
+
+section{
+    padding: var(--padding-medium) var(--padding-large)
+}
+
+.section2{
+    padding: var(--padding-large);
+    display: flex;
+    flex-flow: wrap row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3{
+    padding: var(--padding-large);
+    display: flex;
+    flex-flow:wrap row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+header nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    background-color: var(--base-light);
+}
+
+
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 16px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    background-color: var(--brand);
+}
+
 
 .articles-container{
     background-color: var(--action);
@@ -251,6 +254,7 @@ article .icon{
     
 }
 
+/* Hover state */
 nav a:hover {
   background-color: #D1BF6F;
   font-size: 16px;
