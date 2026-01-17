@@ -18,13 +18,17 @@
 <body>
     <header>
     <div class="main-name"><h1>Stephanie Chan</h1></div>
-        <nav>
-            <ul class="row space-evenly">
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger"></span>
+    </button>
+    <ul class="row space-evenly" id="primary-navigation" data-visible="false">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
     </header>
 
 <main>
@@ -36,9 +40,64 @@
     </section>
 
     
-    <h2 class="center padding-medium section-header">My She Codes projects</h2>
+    <section class="padding-large">
+        <h2 class="center section-header">About Me</h2>
+        <div class="section-description">
+            <p>Hey, I'm Steph. I'm a passionate learner and practical problem-solver with a love for geology, water, tall dogs and good games. I'm currently developing my coding skills through She Codes Plus, combining my analytical background with creative web development. </p>
+            <p>You're probably just as likely to find me out and about in the great outdoors, as I am in front of the computer!</p>
+        </div>
+    </section>
+
+    <section class="section2 padding-large flex-flow">
+        <div class="skills-container">
+            <h2 class="center section-header">Languages & Frameworks</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <p><strong>HTML</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>CSS</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>Python</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>JavaScript</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>Django</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>React</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-container">
+            <h2 class="center section-header">Tools & Platforms</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <p><strong>Git</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>VS Code</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>Insomnia</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>Netlify</strong></p>
+                </div>
+                <div class="skill-item">
+                    <p><strong>Heroku</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="center padding-medium section-header">She Codes Plus 2025</h2>
     <div class="section-description">
-        <p>These are the assignments and projects I completed during May - December 2025 as a member of She Codes Plus 2025</p>
+        <p>These are the assignments and projects I completed during May - December 2025 as a member of She Codes Plus 2025. I was very grateful to be chosen to recieve a "full-ride" Rio Tinto team member scholarship.</p>
     </div>
     <section class="section3 flex-flow padding-medium flex-grow">
         <article class="articles-container">
@@ -71,50 +130,28 @@
         
     </section>
 
-    <section class="section2 padding-large articles-container flex-flow">
-    
-        <div>
-            <ul class="padding-large">
-                <h2><li>Things I love</li></h2>
-                <p>
-                    <li><a><i>Finding cool rocks and exploring new places</i></a></li>
-                    <li><a><i>Stacking dishwashers to max efficiency</i></a></li>
-                    <li><a><i>Making maps</i></a></li>
-                    <li><a><i>Gaming</i></a></li>
-                    <li><a><i>Putting sweaters on very tall dogs</i></a></li>
-                </p>
-            </ul>
-        </div>
-        
-    
-        <div>
-            <ul>
-                <h2><li>Things I'm working on</li></h2>
-                <p>
-                    <li><a><i>CODING</i></a></li>
-                    <li><a><i>Keeping houseplants alive</i></a></li>
-                    <li><a><i>Keeping a toddler alive</i></a></li>
-                    <li><a><i>Keeping the party alive</i></a></li>
-                </p>
-            </ul>
-        </div>
-    </section>
 </main>
 
 <footer>
-    <nav class="center">
-            <ul class="icon row">
-                <li><a href="#"><img src="img/instagram.svg" alt="Instagram logo" class="icon"></a></li>
-                <li><a href="https://shecodesaus.slack.com/team/U08UPGN8YHY"><img src="img/slack.svg" alt="Slack logo" class="icon"></a></li>
-                <li><a href="https://github.com/stephanite9"><img src="img/github.svg" alt="GitHub logo" class="icon"></a></li>
-            </ul>
-        </nav>
-        <div><p>&copy; Steph Chan</p></div>
-
+    <nav>
+        <ul class="icon row">
+            <li><a href="#"><img src="img/linkedin.svg" alt="LinkedIn logo" class="icon"></a></li>
+            <li><a href="https://shecodesaus.slack.com/team/U08UPGN8YHY"><img src="img/slack.svg" alt="Slack logo" class="icon"></a></li>
+            <li><a href="https://github.com/stephanite9"><img src="img/github.svg" alt="GitHub logo" class="icon"></a></li>
+        </ul>
+    </nav>
+    <div><p>&copy; Steph Chan</p></div>
 </footer>
 
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const primaryNav = document.querySelector('#primary-navigation');
+    
+    navToggle.addEventListener('click', () => {
+        const isOpen = primaryNav.getAttribute('data-visible') === 'true';
+        primaryNav.setAttribute('data-visible', !isOpen);
+        navToggle.setAttribute('aria-expanded', !isOpen);
+    });
+</script>
 </body>
-
-
-
 </html>

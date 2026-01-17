@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href=" https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pending" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gaegu&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mansalva&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sacramento&family=Savate:ital,wght@0,200..900;1,200..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="main-name"><h1>Stephanie Chan</h1></div>
+        <nav>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="row space-evenly" id="primary-navigation" data-visible="false">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- main stylistic section -->
+        <section class="hero flex-flow space-between">
+            <h1><span class="specialg">P</span>rojects</h1>
+        </section>
+
+        <h2 class="center padding-medium section-header">She Codes Plus 2025 Projects</h2>
+        <div class="section-description">
+            <p>These are the assignments and projects I completed during May - December 2025 as a member of She Codes Plus 2025</p>
+        </div>
+
+        <section class="section3 flex-flow padding-medium flex-grow">
+            <article class="articles-container">
+                <img class="" src="" alt="">
+                <h3>First website - HTML/CSS</h3>
+                <p>You're already here :D</p>
+                <p><span class="material-symbols-outlined"></span></p>
+            </article>
+            
+            <article class="articles-container">
+                <img class="" src="" alt="">
+                <h3>Weather data analysis - Python</h3>
+                <p>Processing csv files containing data about the weather, and convert them into meaningful text-based summaries.</p>
+                <p><span class="material-symbols-outlined"></span></p>
+            </article>
+            
+            <article class="articles-container">
+                <img class="" src="" alt="">
+                <h3>Fundraising app - Django & React</h3>
+                <p>"The Show Must Go On", a fundraising app for reviving cancelled TV shows and movies.</p>
+                <p><a href="https://show-goes-on.netlify.app/" target="_blank"><span class="material-symbols-outlined">pending</span></a></p>
+            </article>
+
+            <article class="articles-container">
+                <img class="" src="" alt="">
+                <h3>Group project - Django & React</h3>
+                <p>"Yarning Circles", a website for facilitating peer-to-peer learning for a wide range of subjects.</p>
+                <p><a href="https://yarningcircles.netlify.app/" target="_blank"><span class="material-symbols-outlined">pending</span></a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="icon row">
+                <li><a href="#"><img src="img/instagram.svg" alt="Instagram logo" class="icon"></a></li>
+                <li><a href="https://shecodesaus.slack.com/team/U08UPGN8YHY"><img src="img/slack.svg" alt="Slack logo" class="icon"></a></li>
+                <li><a href="https://github.com/stephanite9"><img src="img/github.svg" alt="GitHub logo" class="icon"></a></li>
+            </ul>
+        </nav>
+        <div><p>&copy; Steph Chan</p></div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const primaryNav = document.querySelector('#primary-navigation');
+        
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.getAttribute('data-visible') === 'true';
+            primaryNav.setAttribute('data-visible', !isOpen);
+            navToggle.setAttribute('aria-expanded', !isOpen);
+        });
+    </script>
+</body>
+
+</html>
