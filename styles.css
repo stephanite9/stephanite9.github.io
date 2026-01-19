@@ -204,11 +204,12 @@ header nav ul {
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    background-color: var(--brand);
+    background-color: var(--action);
     max-width: 600px;
     margin: 0 auto;
     padding: var(--padding-xl);
     gap: var(--padding-medium);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input,
@@ -216,30 +217,40 @@ header nav ul {
     width: 100%;
     box-sizing: border-box;
     padding: var(--padding-medium);
-    border: 1px solid #ccc;
+    border: 2px solid var(--brand);
     border-radius: 4px;
     font-family: inherit;
     background-color: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--highlight);
 }
 
 .contact-form label {
     margin-top: var(--padding-small);
     font-weight: bold;
-    color: var(--white);
+    color: var(--base-dark);
 }
 
 .contact-form input[type="submit"] {
-    background-color: var(--highlight);
+    background-color: var(--brand);
+    color: var(--white);
     cursor: pointer;
     margin-top: var(--padding-small);
     padding: var(--padding-medium);
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #c9ad5f;
+    background-color: var(--highlight);
+    color: var(--base-dark);
 }
 
 .articles-container {
@@ -343,6 +354,10 @@ header nav ul {
         padding: var(--padding-medium) calc((100vw / 2) - (1400px / 2));
     }
     
+    /* Increase horizontal spacing between the two skill sections on desktop */
+    .section2 {
+        gap: var(--padding-xl);
+    }
 }
 
 /* Mobile responsive styles */
