@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="styles.css">
-    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <link href=" https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pending" />
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pending">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gaegu&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mansalva&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sacramento&family=Savate:ital,wght@0,200..900;1,200..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
@@ -17,63 +18,62 @@
 
 <body>
     <header>
-    <div class="main-name"><h1>Stephanie Chan</h1></div>
-<nav>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="sr-only">Menu</span>
-        <span class="hamburger"></span>
-    </button>
-    <ul class="row space-evenly" id="primary-navigation" data-visible="false">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+        <div class="main-name"><h1>Stephanie Chan</h1></div>
+        <nav>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="row space-evenly" id="primary-navigation" data-visible="false">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-<main>
+    <main>
+        <section class="hero flex-flow space-between">
+            <h1><span class="specialg">P</span>rofile</h1>
+        </section>
 
-    <section class="hero flex-flow space-between">
-        <h1><span class="specialg">P</span>rofile</h1>
-    </section>
-
-    <section>
-
-        <div class="padding-xl column">
-                <h2>Hey! I'm Steph :D</h2><br>
-
-                <p>I'm just a human bean, born and raised in Perth, Western Australia. </p> 
-                <p>Right now, I'm working in Western Australia as a hydrogeologist, with a budding interest in coding, data management and data analysis. While my job lets me get down and dirty, travelling to remote places, I've always been fascinated by tech.</p>
+        <section>
+            <div class="padding-xl column">
+                <h2>Hey! I'm Steph :D</h2>
+                <br>
+                <p>I'm just a human bean, born and raised in Perth, Western Australia.</p>
+                <br>
+                <p>Right now, I'm working in Western Australia as a hydrogeologist. A hydrogeologist is a groundwater scientist, and it means I get to carry out investigations and contribute to water-related decisions, civil to mining, from greenfields all the way to closure.</p>
+                <br>
+                <p>I have a budding interest in coding, data management and data analysis. While my job lets me get down and dirty, travelling to remote places, I've always been fascinated by tech. In particular, I'd love to work at improving how we handle and utilise all the geological, environmental and technical data we collect.</p>
+                <br>
                 <p>I joined She Codes Plus hoping to build a solid coding foundation, whilst taking advantage of the opportunity to learn alongside like minded women.</p>
-                <p>I have a pretty good rock collection, a pretty average houseplant collection and a pretty neglected Steam library of cozy games.</p>
-                <p>In my free time, you'll find me exploring new places with my family, collecting interesting rocks, and playing video games.</p>
-                
+                <br>
+                <p>I have a pretty good rock collection, a pretty average houseplant collection and a pretty neglected Steam library of cozy games. In my free time, you'll find me exploring new places with my family, collecting interesting rocks, and playing video games.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="row">
+                <li><a href="#"><img src="img/instagram.svg" alt="Instagram logo" class="icon"></a></li>
+                <li><a href="https://shecodesaus.slack.com/team/U08UPGN8YHY"><img src="img/slack.svg" alt="Slack logo" class="icon"></a></li>
+                <li><a href="https://github.com/stephanite9"><img src="img/github.svg" alt="GitHub logo" class="icon"></a></li>
             </ul>
-        </div>
-        
-    </section>
-</main>
+        </nav>
+        <div><p>&copy; Steph Chan</p></div>
+    </footer>
 
-<footer>
-    <nav>
-        <ul class="icon row">
-            <li><a href="#"><img src="img/instagram.svg" alt="Instagram logo" class="icon"></a></li>
-            <li><a href="https://shecodesaus.slack.com/team/U08UPGN8YHY"><img src="img/slack.svg" alt="Slack logo" class="icon"></a></li>
-            <li><a href="https://github.com/stephanite9"><img src="img/github.svg" alt="GitHub logo" class="icon"></a></li>
-        </ul>
-    </nav>
-    <div><p>&copy; Steph Chan</p></div>
-</footer>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const primaryNav = document.querySelector('#primary-navigation');
 
-<script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const primaryNav = document.querySelector('#primary-navigation');
-    
-    navToggle.addEventListener('click', () => {
-        const isOpen = primaryNav.getAttribute('data-visible') === 'true';
-        primaryNav.setAttribute('data-visible', !isOpen);
-        navToggle.setAttribute('aria-expanded', !isOpen);
-    });
-</script>
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.getAttribute('data-visible') === 'true';
+            primaryNav.setAttribute('data-visible', !isOpen);
+            navToggle.setAttribute('aria-expanded', !isOpen);
+        });
+    </script>
 </body>
 </html>
